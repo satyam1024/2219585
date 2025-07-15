@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import { Log } from "../api/logger";
+import { Log } from "../../../shared/middleware/logger";
 import "./Short.css";
 const Short = ({ token }) => {
   const [urls, setUrls] = useState([""]);
