@@ -2,9 +2,10 @@ import React from "react";
 import Shortener from "./component/Short";
 import Analytics from "./component/Analysis";
 import "./App.css";
+
 const App = () => {
   const [tab, setTab] = React.useState(0);
-  const token = "your_access_token";
+  const token = import.meta.env.VITE_AUTH_TOKEN;
 
   return (
     <div className="container">
